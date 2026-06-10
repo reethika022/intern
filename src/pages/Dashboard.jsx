@@ -131,7 +131,7 @@ export function Dashboard() {
                 <div><p className="font-semibold">#{item.rank} {item.intern}</p><p className="text-xs text-pulse-muted">{item.farmers} farmers • {item.demos} demos</p></div>
                 <span className="font-bold text-pulse-primary">{item.score}</span>
               </div>
-            ))}}
+            ))}
           </CardContent>
         </Card>
       </div>

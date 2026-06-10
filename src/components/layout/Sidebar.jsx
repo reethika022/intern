@@ -79,7 +79,7 @@ export function Sidebar({ mobile = false }) {
             <p className="text-xs text-pulse-muted">Field Intern</p>
           </div>
         </div>
-        <Button variant="secondary" className={cn("w-full", collapsed && "px-0")} size="sm">
+        <Button variant="secondary" className={cn("w-full", collapsed && "px-0")} size="sm" onClick={() => {}}>
           <LogOut className="h-4 w-4" />
           <span className={cn(collapsed && "hidden")}>Logout</span>
         </Button>
