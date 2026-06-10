@@ -13,6 +13,7 @@ import {
   ShieldAlert,
   Store,
   Trophy,
+  Upload,
   Users,
   X,
 } from "lucide-react";
@@ -27,6 +28,7 @@ const navItems = [
   { label: "Farmers", path: "/farmers", icon: Users },
   { label: "Demo Plots", path: "/demo-plots", icon: MapPinned },
   { label: "Dealers", path: "/dealers", icon: Store },
+  { label: "Bulk Registration", path: "/bulk", icon: Upload },
   { label: "Issues", path: "/issues", icon: ShieldAlert },
   { label: "Media", path: "/media", icon: Camera },
   { label: "Reports", path: "/reports", icon: BarChart3 },
@@ -58,7 +60,7 @@ export function Sidebar({ mobile = false }) {
             onClick={() => mobile && setMobileSidebarOpen(false)}
             className={({ isActive }) =>
               cn(
-                "flex h-10 items-center gap-3 rounded-md px-3 text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-white",
+                "flex h-10 items-center gap-3 rounded-md px-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900",
                 isActive && "bg-emerald-500/15 text-pulse-primary ring-1 ring-emerald-500/20",
                 collapsed && "justify-center px-0"
               )
@@ -71,7 +73,7 @@ export function Sidebar({ mobile = false }) {
       </nav>
       <div className="border-t border-pulse-border p-4">
         <div className={cn("mb-3 flex items-center gap-3", collapsed && "justify-center")}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-pulse-primary font-bold text-slate-950">UR</div>
+          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-pulse-primary font-bold text-white">UR</div>
           <div className={cn("min-w-0", collapsed && "hidden")}>
             <p className="truncate text-sm font-semibold text-pulse-text">Uma Reethika</p>
             <p className="text-xs text-pulse-muted">Field Intern</p>

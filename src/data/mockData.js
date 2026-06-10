@@ -84,3 +84,17 @@ export const media = [
   { type: "Issue", title: "Leaf curl evidence", linked: "I-301", uploaded: "Jun 3" },
   { type: "Dealer", title: "Shop display", linked: "DV-144", uploaded: "Jun 2" },
 ];
+
+export const interns = [
+  { id: "I-001", name: "Uma Reethika", territory: "Ranga Reddy", joinDate: "2026-01-15", status: "Active", performance: "Excellent" },
+  { id: "I-002", name: "Arjun Varma", territory: "Medchal", joinDate: "2026-02-10", status: "Active", performance: "Great" },
+  { id: "I-003", name: "Maya Singh", territory: "Chevella", joinDate: "2026-01-20", status: "Active", performance: "Good" },
+  { id: "I-004", name: "Nikhil Rao", territory: "Shadnagar", joinDate: "2026-03-05", status: "On Leave", performance: "Good" },
+];
+
+export const bulk = [
+  { id: "B-001", type: "Farmers", quantity: 245, date: "2026-06-08", status: "Completed", internName: "Uma Reethika", qualification: "B.Tech Agriculture", phone: "98765 12345", mandal: "Narsapur", district: "Ranga Reddy", joinDate: "2026-01-15" },
+  { id: "B-002", type: "Demos", quantity: 42, date: "2026-06-05", status: "Completed", internName: "Arjun Varma", qualification: "B.Sc Agriculture", phone: "99887 44120", mandal: "Moinabad", district: "Ranga Reddy", joinDate: "2026-02-10" },
+  { id: "B-003", type: "Dealers", quantity: 12, date: "2026-06-10", status: "In Progress", internName: "Maya Singh", qualification: "M.Sc Horticulture", phone: "91234 88901", mandal: "Shadnagar", district: "Ranga Reddy", joinDate: "2026-01-20" },
+  { id: "B-004", type: "Media", quantity: 156, date: "2026-06-09", status: "Completed", internName: "Nikhil Rao", qualification: "B.A Economics", phone: "90123 67012", mandal: "Medchal", district: "Medchal", joinDate: "2026-03-05" },
+];

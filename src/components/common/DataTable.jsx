@@ -11,7 +11,7 @@ export function DataTable({ data = [], columns = [] }) {
     <Card className="overflow-hidden">
       <div className="table-scroll w-full overflow-x-auto">
         <table className="w-full min-w-[720px] border-collapse text-left text-sm">
-          <thead className="bg-slate-950/70 text-xs uppercase tracking-wide text-pulse-muted">
+          <thead className="bg-slate-100 text-xs uppercase tracking-wide text-pulse-muted">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
@@ -24,9 +24,9 @@ export function DataTable({ data = [], columns = [] }) {
           </thead>
           <tbody>
             {table.getRowModel().rows.map((row) => (
-              <tr key={row.id} className="transition hover:bg-slate-800/45">
+              <tr key={row.id} className="transition hover:bg-slate-50">
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="border-b border-pulse-border px-4 py-3 text-slate-200">
+                  <td key={cell.id} className="border-b border-pulse-border px-4 py-3 text-slate-700">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

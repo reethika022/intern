@@ -25,7 +25,7 @@ export function Attendance() {
           <CardContent className="grid gap-4">
             <ImageUploader label="Selfie Upload" />
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-md border border-pulse-border bg-slate-950 p-4"><MapPin className="h-5 w-5 text-pulse-primary" /><p className="mt-2 text-sm font-semibold">GPS Status</p><p className="text-xs text-pulse-muted">Locked within field territory</p></div>
+              <div className="rounded-md border border-pulse-border bg-slate-50 p-4"><MapPin className="h-5 w-5 text-pulse-primary" /><p className="mt-2 text-sm font-semibold">GPS Status</p><p className="text-xs text-pulse-muted">Locked within field territory</p></div>
               <FormInput label="Check-In Time" type="time" defaultValue="08:45" />
             </div>
             <Button><UploadCloud className="h-4 w-4" /> Start Day</Button>
@@ -34,7 +34,7 @@ export function Attendance() {
         <Card>
           <CardHeader><CardTitle>Check-Out Card</CardTitle></CardHeader>
           <CardContent className="grid gap-4">
-            <div className="rounded-md border border-pulse-border bg-slate-950 p-4"><Clock className="h-5 w-5 text-pulse-primary" /><p className="mt-2 text-sm font-semibold">Current Session</p><p className="text-xs text-pulse-muted">8h 12m active in Chevella territory</p></div>
+            <div className="rounded-md border border-pulse-border bg-slate-50 p-4"><Clock className="h-5 w-5 text-pulse-primary" /><p className="mt-2 text-sm font-semibold">Current Session</p><p className="text-xs text-pulse-muted">8h 12m active in Chevella territory</p></div>
             <FormInput label="Check-Out Time" type="time" defaultValue="17:30" />
             <TextArea label="Remarks" placeholder="Summarize today's visits and blockers" />
             <Button>End Day</Button>

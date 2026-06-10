@@ -13,7 +13,7 @@ export function Navbar() {
       </Button>
       <SearchBar />
       <div className="ml-auto flex items-center gap-2">
-        <span className="hidden rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300 sm:inline-flex">Field Admin</span>
+        <span className="hidden rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-700 sm:inline-flex\">Field Admin</span>
         <Button variant="ghost" size="sm" aria-label="Notifications">
           <Bell className="h-4 w-4" />
         </Button>

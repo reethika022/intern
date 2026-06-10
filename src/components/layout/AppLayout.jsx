@@ -14,7 +14,7 @@ export function AppLayout() {
       </div>
       {mobileSidebarOpen ? (
         <div className="fixed inset-0 z-50 lg:hidden">
-          <button className="absolute inset-0 bg-slate-950/70" onClick={() => setMobileSidebarOpen(false)} aria-label="Close navigation" />
+          <button className="absolute inset-0 bg-black/30" onClick={() => setMobileSidebarOpen(false)} aria-label="Close navigation" />
           <div className="relative h-full">
             <Sidebar mobile />
           </div>

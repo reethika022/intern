@@ -2,7 +2,6 @@ import { Award, Medal, Star, Trophy } from "lucide-react";
 import { PageHeader } from "../components/common/PageHeader";
 import { StatCard } from "../components/common/StatCard";
 import { DataTable } from "../components/common/DataTable";
-import { StatusBadge } from "../components/common/StatusBadge";
 import { leaderboard } from "../data/mockData";
 
 const columns = [
@@ -12,7 +11,6 @@ const columns = [
   { accessorKey: "demos", header: "Demos" },
   { accessorKey: "reports", header: "Reports" },
   { accessorKey: "score", header: "Score" },
-  { accessorKey: "badge", header: "Badges", cell: ({ getValue }) => <StatusBadge value={getValue()} /> },
 ];
 
 export function Leaderboard() {

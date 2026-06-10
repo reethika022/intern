@@ -6,6 +6,7 @@ import { Tasks } from "./pages/Tasks";
 import { Farmers } from "./pages/Farmers";
 import { DemoPlots } from "./pages/DemoPlots";
 import { Dealers } from "./pages/Dealers";
+import { Bulk } from "./pages/Bulk";
 import { Issues } from "./pages/Issues";
 import { Media } from "./pages/Media";
 import { Reports } from "./pages/Reports";
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "farmers", element: <Farmers /> },
       { path: "demo-plots", element: <DemoPlots /> },
       { path: "dealers", element: <Dealers /> },
+      { path: "bulk", element: <Bulk /> },
       { path: "issues", element: <Issues /> },
       { path: "media", element: <Media /> },
       { path: "reports", element: <Reports /> },

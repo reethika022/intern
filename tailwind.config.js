@@ -6,13 +6,13 @@ export default {
       colors: {
         pulse: {
           primary: "#22C55E",
-          secondary: "#0F172A",
+          secondary: "#f1f5f9",
           accent: "#84CC16",
-          bg: "#020617",
-          card: "#0F172A",
-          border: "#1E293B",
-          text: "#F8FAFC",
-          muted: "#94A3B8",
+          bg: "#ffffff",
+          card: "#f8fafc",
+          border: "#e2e8f0",
+          text: "#1e293b",
+          muted: "#64748b",
         },
       },
       boxShadow: {
