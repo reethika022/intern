@@ -2,7 +2,7 @@ import { flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-tabl
 import { Card } from "../ui/Card";
 import { EmptyState } from "./EmptyState";
 
-export function DataTable({ data = [], columns = [] }) {
+export function DataTable({ data = [], columns = [], onRowClick, selectedRowId, rowIdKey = "id" }) {
   const table = useReactTable({ data, columns, getCoreRowModel: getCoreRowModel() });
 
   if (!data.length) return <EmptyState />;
@@ -23,15 +23,29 @@ export function DataTable({ data = [], columns = [] }) {
             ))}
           </thead>
           <tbody>
-            {table.getRowModel().rows.map((row) => (
-              <tr key={row.id} className="transition hover:bg-slate-50">
-                {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="border-b border-pulse-border px-4 py-3 text-slate-700">
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
-                ))}
-              </tr>
-            ))}
+            {table.getRowModel().rows.map((row) => {
+              const isSelected = selectedRowId && row.original[rowIdKey] === selectedRowId;
+              return (
+                <tr
+                  key={row.id}
+                  className={`transition-colors hover:bg-slate-50 ${onRowClick ? "cursor-pointer" : ""} ${
+                    isSelected ? "bg-emerald-500/10 hover:bg-emerald-500/15 font-medium" : ""
+                  }`}
+                  onClick={() => onRowClick && onRowClick(row.original)}
+                >
+                  {row.getVisibleCells().map((cell) => (
+                    <td
+                      key={cell.id}
+                      className={`border-b border-pulse-border px-4 py-3 ${
+                        isSelected ? "text-emerald-900 border-emerald-500/10" : "text-slate-700"
+                      }`}
+                    >
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
